@@ -47,6 +47,9 @@ packages = [
     "certipy.lib",
 ]
 
+[tool.poetry]
+packages = [{ include = "certipy" }]
+
 [tool.isort]
 profile = "black"
 line_length = 88
