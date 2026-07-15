@@ -11,7 +11,7 @@ authors = [
     {name = "ly4k"}
 ]
 license = {text = "MIT"}
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -20,7 +20,7 @@ classifiers = [
 dependencies = [
     "asn1crypto~=1.5.1",
     "cryptography~=42.0.8",
-    "impacket~=0.13.0",
+    "impacket>=0.13.0",
     "ldap3~=2.9.1",
     "pyasn1~=0.6.1",
     "dnspython~=2.7.0",
@@ -50,6 +50,9 @@ packages = [
     "certipy.commands.parsers",
     "certipy.lib",
 ]
+
+[tool.poetry]
+packages = [{ include = "certipy" }]
 
 [tool.isort]
 profile = "black"
