@@ -3,13 +3,14 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "certipy-ad"
-version = "5.1.0"
-description = "Active Directory Certificate Services enumeration and abuse"
+name = "certipy-nxc"
+version = "5.1.0.post1"
+description = "Certipy (ly4k/Certipy) packaged for NetExec, with relaxed Python and impacket pins"
 readme = "README.md"
 authors = [
     {name = "ly4k"}
 ]
+maintainers = [{name = "Pennyw0rth"}]
 license = {text = "MIT"}
 requires-python = ">=3.10"
 classifiers = [
@@ -37,11 +38,8 @@ bloodhound = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ly4k/Certipy"
-"Bug Tracker" = "https://github.com/ly4k/Certipy/issues"
-
-[project.scripts]
-certipy = "certipy.entry:main"
+Homepage = "https://github.com/Pennyw0rth/Certipy"
+Upstream = "https://github.com/ly4k/Certipy"
 
 [tool.setuptools]
 packages = [
@@ -50,9 +48,6 @@ packages = [
     "certipy.commands.parsers",
     "certipy.lib",
 ]
-
-[tool.poetry]
-packages = [{ include = "certipy" }]
 
 [tool.isort]
 profile = "black"
